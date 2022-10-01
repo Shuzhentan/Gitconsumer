@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+}
+
+a {
+    /* text-decoration: none;
+    cursor: pointer;
+    color: blue; */
+    color: hsl(207, 44%, 49%)
+    /* specifying color overides the default color of visited links. */
+}
+/* pseudoclass */
+a:visited {
+    color:purple;
+}
+
+a:hover, a:focus {
+    /* make the color a bit lighter. */
+    /* color: hsl(184, 44%, 49%) */
+    /* or */
+    opacity: 0.8;
+    /* or */
+    /* color: rgba(red, green, blue, alpha); */
+    background: gold;
+}
+
+a:active {
+    color: red;
+}
+
+/* Note that if a:hover was put above a:visited,
+the color would not change if the cursor hovered over the link. */

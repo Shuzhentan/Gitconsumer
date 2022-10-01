@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    padding:15% 5%;
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+}
+
+/* ol {
+    list-style-type:lower-latin;
+} */
+
+ol {
+    list-style-type:lower-alpha;
+    padding: 0;
+}
+
+ul { 
+    list-style-type: square;
+    text-align: center;
+    /* list-style-position:inside; */
+    list-style-position: inside;
+    color: blue;
+    line-height: 2;
+    /* list-style-image: url('checkmark.png');
+    list-style: square url('checkmark.png') 
+    inside;  */
+    /*list-style entails 'list-style-type', 'list-style-position', 'list-style-image' */
+}
+
+/* li entails ul and ol */
+/* li {
+    color: red;
+} */
+
+/* ul li:nth-child(2) {
+    color: red;
+} */
+
+ul li:nth-child(odd) {
+    color: pink;
+}
+
+/* pseudo element */
+ul ::marker {
+    color: red;
+    font-family: fantasy;
+    font-size: 1em;
+    content: "Only $5 >> ";
+}
